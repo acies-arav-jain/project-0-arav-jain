@@ -8,10 +8,14 @@ name = "project-0"
 version = "0.1.0"
 description = "Document cleaning and ingestion CLI"
 requires-python = ">=3.11"
+dependencies = [
+    "emoji>=2.0",
+    "pydantic"
+]
 
 
 [project.scripts]
-cli = "app.cli:main"
+chunker = "app.cli:main"
 
 
 [tool.setuptools.packages.find]
